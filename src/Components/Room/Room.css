@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    margin: 10px;
+    min-height: 340px;
+}
+
+.sl-no {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    width: 25px;
+    text-align: center;
+    background-color: rgb(247, 70, 17);
+    color: #ffff;
+}
+.card h6 {
+    display:inline;
+}
+.card-footer {
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
