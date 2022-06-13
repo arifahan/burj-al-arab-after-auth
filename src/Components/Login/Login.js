@@ -40,8 +40,6 @@ const Login = () => {
         }
         setLoggedInUser(signedInUser);
         storeAuthToken();
-        history.replace(from);
-
       })
       .catch(error => {
         const errorCode = error.code;
@@ -72,6 +70,7 @@ const Login = () => {
         getAuth().currentUser.getIdToken(/* forceRefresh */ true)
         .then(function(idToken) {
           sessionStorage.setItem('token', idToken);
+          history.replace(from);
           // Send token to your backend via HTTPS
           // ...
         }).catch(function(error) {
