@@ -25,7 +25,7 @@ function App() {
   });
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <h1>44.06</h1>
+      <h1>5555555555555555555</h1>
       <p>name: {loggedInUser.name}</p>
         <Header />
             <Switch>
